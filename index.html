@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/b9fcc11285.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
     <!--<link rel="stylesheet" type="text/css" href="./960_24_col.css">-->
     <link rel="stylesheet" type="text/css" href="./index.css">
 
@@ -11,14 +14,18 @@
 </head>
 <body>
     <!--Nav Bar-->
-<div class="header">
+<div class="header container-fluid">
+  
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="icon" href="#">iStore</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light row">
+      <div class="col-sm-2">
+        <a class="icon" href="#"><img src="./assets/Logo.svg"  alt="iStore"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      </div>
+      <div class="col-sm-6">
+        <div class="collapse menu navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link Laptop active" href="#">Laptop  <span class="sr-only">(current)</span></a>
             <a class="nav-link Accessories" href="#">Accessories</a>
@@ -28,21 +35,151 @@
           </div>
         </div>
 
-        <ul class="nav navbar-nav navbar-right">
-            <li> $445.00 </li>
-            <li>Good Day! <br> Brandon Hicks</li>
-          </ul>
-      </nav>
-      
-      
+      </div>
+        <div class="col-sm-2>
+          
+            <p>  class="cart"> $445.00  <span  class="cart-icon"> <ion-icon name="bag-outline"></ion-icon> </span></p>
+          
+           
+        </div>
+        <div class="divider"></div>
+        
+        <div class="col-sm-2">
+          <span>
+            <p>Good Day!</p><p>Brandon Hicks</p>
+          </span>
+          
+        
+        </div>
+
+    </nav>   
 </div>
 
+        <!--MAIN CONTENT-->
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
 
+        <!--main content  actually starts here-->
+          <div class="col-8 main-content">
+            <div class="row">
+              <!-- product starts here-->
+              <div class="col-6">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                      <img src="./assets/product.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                </div>
+
+                <!--Thumbnails -->
+                <div class="row">
+                <div class="col-4 active">
+                  <img src="./assets/product.jpg" class="img-thumbnail rounded float-left"" alt="...">
+                </div>
+                <div class="col-4">
+                  <img src="./assets/product.jpg" class="img-thumbnail rounded mx-auto d-block"" alt="...">
+                </div>
+                <div class="col-4">
+                  <img src="./assets/product.jpg" class="img-thumbnail rounded float-right" alt="...">
+                </div>
+                </div>
+              </div>
+
+              <!--details starts here-->
+              <div class="col-6">
+                <h1>Laptop Pro 2019</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. sed do eiusmod tempor incididunt labore</p>
+                <br>
+                <p> Select Color: </p>
+                <!--colors-->
+               
+                </div><!--colors ends here-->
+
+                <!--Specifications-->
+                <p> Select Specifications: </p>
+                <div class="card-columns">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="card ">
+                        <div class="card-body text-center">
+                          <p class="card-text">Some text inside the first card</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col- 6">
+                      <div class="card ">
+                        <div class="card-body text-center">
+                          <p class="card-text">Some text inside the second card</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class=" col-6">
+                      <div class="card ">
+                        <div class="card-body text-center">
+                          <p class="card-text">Some text inside the third card</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class=" col-6">
+                      <div class="card ">
+                        <div class="card-body text-center">
+                          <p class="card-text">Some text inside the fourth card</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+
+              </div><!--details ends here-->
+            </div>
+
+          </div>
+
+      <!-- end of actual main content-->
+          <div class="col"></div>
+
+        </div>
+      </div><!-- end of main content-->
+
+  
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
+
+<footer class="footer" >
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+        <img class="img-fluid" src="./assets/order.jpg" alt="">
+
+      </div>
+      <div class="col-7">
+        <h1> Laptop Pro early 2019 with touch bar</h1>
+        <p>Space Grey | 13.3" 1TB 2.4GHZ Quad Core | 8GB Ram | 1TB SSD | 2 years warranty </p>
+      </div>
+      <div class="col-3">
+        $2350.00 <button type="button" class="btn btn-dark btn-sm">Add to cart </button>
+      </div>
+    </div>
+
+  </div>
+  
+</footer>
 </html>
 
